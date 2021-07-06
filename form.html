@@ -12,7 +12,7 @@
     <form>
         <label for="fname">Enter Full name : </label>
        
-        <input id="fname" type="text" placeholder="Enter Full Name"> <br>
+        <input value="sanket" id="fname" type="text" minlength="6" maxlength="12" placeholder="Enter Full Name"> <br>
 
         <label for="email">Enter Email : </label>
 
@@ -22,7 +22,7 @@
         <input type="password" name="password" id="password"> <br>
 
         <label for="age">Enter Age : </label>
-        <input type="number" name="age" id="age"> <br>
+        <input type="number" min="18" max="70" name="age" id="age"> <br>
 
       
 
@@ -50,6 +50,32 @@
 
         <input type="submit" value="Register">
 
+
+        <input type="text" list="city">
+
+        <datalist id="city">
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="banglore">Banglore</option>
+            <option value="delhi">Delhi</option>
+
+        </datalist>
+
+
+        <input type="datetime-local" name="" id="">
+
+        <input type="image" src="./images/img_submit.gif" alt=""> <br>
+
+        <input type="range" min="0" max="100" value="10" name="" id="">
+
+        <input type="tel" name="" id="">
+
+        <label for="">Upload Image</label>
+
+        <input type="file" name="" id="">
+
+        <input value="100" readonly type="text">
+
         <button type="button">Submit</button>
 
 
@@ -57,7 +83,12 @@
         dropdown 
         datalist 
         attributes of each element
-        validation and restrictrictions attributes -->
+        validation and restrictrictions attributes
+    
+        name,email,address, dropdown, radio button, checkbox, experience - range filter,
+        upload photo - file, datalist - city
+    
+    -->
     </form>
 </body>
 </html>
