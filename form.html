@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, css, javascript, web">
     <title>Document</title>
 </head>
+
 <body>
-    
+
 
     <form>
         <label for="fname">Enter Full name : </label>
-       
+
         <input value="sanket" id="fname" type="text" minlength="6" maxlength="12" placeholder="Enter Full Name"> <br>
 
         <label for="email">Enter Email : </label>
 
         <input type="email" name="email" id="email"> <br>
-<label for="password">Enter Password : </label>
+        <label for="password">Enter Password : </label>
 
         <input type="password" name="password" id="password"> <br>
 
         <label for="age">Enter Age : </label>
         <input type="number" min="18" max="70" name="age" id="age"> <br>
 
-      
 
         <label for="">Select Gender</label>
+
+        <input name="gender" type="radio">
+
+        <label for="">Male</label>
+
+
+        <input name="gender" type="radio">
+
+        <label for="">Female</label>
+
+        <input name="gender" type="radio">
+        <label for="">Others</label>
+
+        <!-- <label for="">Select Gender</label>
 
         <input type="radio" name="gender" id="male">
         <label for="">Male</label>
         <input type="radio" name="gender" id="female">
         <label for="">Female</label>
         <input type="radio" name="gender" id="other">
-        <label for="">Others</label>
+        <label for="">Others</label> -->
 
 
         <label for="">Select Languages : </label>
@@ -45,12 +61,14 @@
         <label for="marathi">Marathi</label>
 
         <input type="checkbox" name="hindi" id="hindi">
-        <label for="hindi">Hindi</label>
+        <label for="hindi">Hindi</label> <br>
 
 
-        <input type="submit" value="Register">
+        <input type="submit" value="register"> <br>
 
+        <button type="reset">Sign up</button>
 
+        <!-- 
         <input type="text" list="city">
 
         <datalist id="city">
@@ -59,7 +77,40 @@
             <option value="banglore">Banglore</option>
             <option value="delhi">Delhi</option>
 
-        </datalist>
+        </datalist> -->
+
+        <label for="">City</label>
+
+        <input type="text" list="city">
+
+        <datalist id="city">
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="nashik">Nashik</option>
+            <option value="banglore">Banglore</option>
+        </datalist> <br>
+
+
+        <select name="" id="" multiple>
+
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </optgroup>
+
+            <optgroup label="Backend">
+                <option value="java">Java</option>
+                <option value="database">Database</option>
+                <option value="spring">Spring</option>
+            </optgroup>
+        </select>
+
+        <label for="">Upload File/picture</label>
+
+        <input accept="application/pdf" type="file" name="" id="">
+
+
 
 
         <input type="datetime-local" name="" id="">
@@ -91,4 +142,5 @@
     -->
     </form>
 </body>
+
 </html>
