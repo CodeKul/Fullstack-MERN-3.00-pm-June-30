@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form>
+        <label for="name">Enter Name</label>
+      
+        <input required minlength="5" maxlength="10" id="name" type="text"> <br>
+
+        <label for="email">Email</label>
+        <input required id="email" type="email"> <br>
+
+        <label for="password">password</label>
+        <input required type="password" name="password" id="password"> <br>
+
+        <label for="age">Age</label>
+        <input min="18" max="60" type="number" name="age" id="age"> <br>
+
+
+        <label for="gender">Select Gender</label>
+        <input name="gender" type="radio">
+        <label for="male">Male</label>
+
+        <input name="gender" type="radio">
+        <label for="female">Female</label> <br>
+
+
+        <select name="month" id="month">
+            <option value="">January</option>
+            <option value="">February</option>
+            <option value="">March</option>
+            <option value="">April</option>
+        </select> <br>
+
+        <label for="city">City</label>
+        <input type="text" list="city">
+        <datalist id="city">
+            <option value="pune">Pune</option>
+            <option value="pcmc">PCMC</option>
+            <option value="haveli">Haveli</option>
+            <option value="shirur">Shirur</option>
+        </datalist> <br>
+
+
+        <label for="">Date of Birth</label>
+        <input type="date" name="" id="">
+
+
+
+        <input type="submit">
+
+
+    </form>
+</body>
+</html>
