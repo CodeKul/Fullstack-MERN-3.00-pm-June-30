@@ -9,6 +9,8 @@
 <body>
     
 
+    <fieldset>
+        <legend>Registration Form</legend>
     <form>
         <label for="name">Enter Name</label>
       
@@ -23,7 +25,8 @@
         <label for="age">Age</label>
         <input min="18" max="60" type="number" name="age" id="age"> <br>
 
-
+<fieldset>
+    <legend>Select Gender</legend>
         <label for="gender">Select Gender</label>
         <input name="gender" type="radio">
         <label for="male">Male</label>
@@ -31,13 +34,31 @@
         <input name="gender" type="radio">
         <label for="female">Female</label> <br>
 
+    </fieldset>
 
-        <select name="month" id="month">
+
+        <select multiple name="month" id="month">
             <option value="">January</option>
             <option value="">February</option>
             <option value="">March</option>
             <option value="">April</option>
         </select> <br>
+
+
+        <select name="" id="">
+            <optgroup label="Backend">
+                <option value="java">Java</option>
+                <option value="spring">Spring</option>
+                <option value="database">Database</option>
+            </optgroup>
+
+
+            <optgroup label="Frontend">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">Javascript</option>
+            </optgroup>
+        </select>
 
         <label for="city">City</label>
         <input type="text" list="city">
@@ -49,8 +70,25 @@
         </datalist> <br>
 
 
+        <label >Upload Image</label>
+        <input multiple type="file">
+
+
         <label for="">Date of Birth</label>
         <input type="date" name="" id="">
+
+        <label for="">Departure time</label>
+        <input type="time" name="" id=""> <br>
+
+        <label for="">Range</label>
+        <input value="30" type="range" name="" id="">
+
+        <label for="">Send Message</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+        <label for="">Arrive Date and Time</label>
+        <input type="datetime-local" name="" id="">
 
 
 
@@ -58,5 +96,6 @@
 
 
     </form>
+</fieldset>
 </body>
 </html>
