@@ -1,37 +1,47 @@
+span{
+    padding: 15px;
+    height: 100px;
+}
+
 header{
     text-align: center;
 }
 
+
 #it-title{
-    display: inline-block;
     font-size: xx-large;
-    color: #a00606;
+    width: 110px;
+    display: inline-block;
+    /* box-sizing: border-box; */
 
-    width: 120px;
+    color: brown;
 }
 
-span{
-    font-size: x-large;
-}
 
 li{
     display: inline;
-    padding: 4px;
+    padding: 1px;
+   
 }
 
 nav{
-    background-color: #a00606;
-    padding: 5px;
+    background-color: brown;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-nav a{
-    color: white;
+a{
     text-decoration: none;
+    padding: 8px;
+    color: white;
+   
 }
 
 
+.Live-News{
+    /* text-align: right; */
+    float: right;
+}
+
+
+ul{
+    padding: 8px;
+}
