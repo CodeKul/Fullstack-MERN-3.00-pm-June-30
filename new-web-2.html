@@ -1,47 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <!-- what is the difference between inline and inline-block -->
+    <!-- what is the difference between inpne and inpne-block -->
 
     <!-- position property
     units in css 
     box-model -->
 
     <style>
-        header{
-            text-align: center;
-        }
+      /* css selectors 
 
-        #india-today{
-            font-size: 40px;
-            display: inline-block;
-            width: 200px;
-            color: red;
-            background-color: blue;
-        }
+        class selector
+        id selector 
+        element/type selector 
+        universal selector
 
 
+        combinators - relation between elements 
+        child combinator 
+        descendent combinator 
+        sibling combinator - 1. General Sibling selector
+                            2. Adjacent sibling selector
+
+
+ */
+
+      header {
+        text-apgn: center;
+      }
+
+      main span {
+        color: blue;
+      }
+
+      #india-today {
+        font-size: 40px;
+        display: inpne-block;
+        width: 200px;
+        color: red;
+        background-color: blue;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .btn {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        border-radius: 0.3rem;
+      }
+
+      button .red {
+        background-color: red;
+      }
+
+      /* .container a{
+            color: white;
+            background-color: black;
+        } */
+
+      a {
+        background-color: red;
+        color: white;
+      }
+
+      /* general sibling selector  ~
+adjacent sibling selector  + */
+
+      p ~ span {
+        background-color: darkorange;
+        color: darkslategray;
+        font-size: x-large;
+      }
+
+      header[title] {
+        background-color: deeppink;
+        color: firebrick;
+      }
+
+      a[href="http://www.codekul.com"]
+      {
+        background-color: red;
+        color: white;
+      }
+
+      /* $ dollar sign is used to target such element - whatever
+         value wehave written for attribute in css whose atrribute 
+        value is same ending part */
+      a[href$="gov.in/"] {
+        background-color: rgb(0, 255, 0);
+        color: white;
+      }
+
+      /* ^ wedge sign is used to target such element - whatever
+         value wehave written for attribute in css whose 
+         is same starting part of attribute value */
+      a[href^="https"] {
+        background-color: rgb(25, 0, 255);
+        color: rgb(255, 255, 255);
+      }
+
+      /*   * wedge sign is used to target such element - whatever
+         value wehave written for attribute in css whose 
+         is present anywhere in starting, middle or end part of attribute value */
+
+      a[href*="today"] {
+        background-color: rgba(183, 0, 255, 0.931);
+        color: white;
+      }
+
+      a {
+        background-color: darkorange;
+        color: darkblue;
+      }
+
+      /* .sports{
+          background-color:teal ;
+          color: yellow;
+      } */
+
+      [class = "Container-sports" i] {
+          background-color:teal ;
+          color: yellow;
+      }
     </style>
-</head>
-<body>
-    
-
-    <!-- List out inline and block level elements in html -->
-    <!-- inline css
+  </head>
+  <body>
+    <!-- pst out inpne and block level elements in html -->
+    <!-- inpne css
     internal css
     external css -->
 
-    <header>
+    <header title="header">
+      <h1>CSS Selectors & Combinators</h1>
+    </header>
+
+    <div class="container">
+      <p>para -1</p>
+      <span>span 1</span>
+
+      <a href="http://www.codekul.com">Codekul</a>
+
+      <a href="https://www.Twitter.com">Twitter</a>
+
+      <a href="https://www.github.com">Github</a>
+
+      <a href="https://www.indiatoday.in/">IndiaToday</a>
+
+      <a href="https://www.india.gov.in/">India website</a>
+
+      <use href="#"> Welcome to Programming </use>
+    </div>
+
+    <span>span - 2</span>
+
+    <div class="container-sports">
+      <h1>Sports News</h1>
+    </div>
+
+    <article class="sports">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus
+        consequatur deserunt recusandae esse asperiores ipsa, molestias dolorum
+        nisi maiores ab, accusantium inventore voluptatum placeat? Illo deleniti
+        iure culpa quod accusamus.
+      </p>
+    </article>
+
+    <!-- <header title="header">
         <span>News</span>
-        <span>LIVE TV</span>
+        <span>pVE TV</span>
         <span id="india-today">INDIA TODAY</span>
         <span>APP</span>
         <span>MAGZINE</span>
     </header>
-</body>
+
+
+    <main title="main-content">
+        <p  class="red">Lorem ipsum dolor sit amet consectetur adipisicing ept. Inventore voluptates illo repellendus ipsam provident nihil tempore molptia, exercitationem iste voluptatibus ex earum rerum modi ut tempora! Praesentium molptia quo odit.</p>
+
+        <span >WElcome</span> <span>to Codekul</span>
+
+
+        <button class="btn red">Button 1</button>
+        <button title="button" class="btn blue">Button 2</button>
+        <button class="btn">Button 3</button>
+        <button class="btn">Button 4</button>
+
+
+        <div>
+            <p>One</p>
+
+            <div>
+                <p>stwo</p>
+                <span>spane-one</span>
+
+            </div>
+
+            <span>span- two</span>
+        </div>
+
+        <span>span-Three</span>
+
+        <div class="container">
+            <span>Welcome</span>
+            <section>
+                <p>
+                    <span><a href="#">Codekul</a></span>
+                    <span>Hello</span>
+                </p>
+            </section>
+        </div>
+
+
+        
+            
+            <p>One</p>
+            <span>Hello</span>
+            <p>Two</p>
+            <p>Three</p>
+            <span>Welcome</span>
+            <p>Four</p>
+        
+
+
+        
+
+        <button>
+            <a class="red" href="#">Hyperpnk</a>
+        </button>
+    </main> -->
+  </body>
 </html>
