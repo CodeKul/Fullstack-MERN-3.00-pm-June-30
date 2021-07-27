@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!-- pseudo element selector 
+    css position property -->
+
     <style>
         p::first-letter{
             color: crimson;
@@ -19,6 +22,25 @@
 
 
         /* before, after */
+
+        p::after{
+          content: "@";
+        }
+
+        #news-heading::before{
+          content: " ";
+    display: inline-block;
+    margin-right: .5rem;
+    border-left: 2px solid #47a1d8;
+    height: 0.75rem;
+    padding: 0;
+    width: 0;
+        }
+
+        p::selection{
+          background-color: blue;
+          color: white;
+        }
     </style>
   </head>
   <body>
@@ -28,5 +50,7 @@
       inventore, in alias sint sed maiores pariatur ab debitis officia
       provident. Vel?
     </p>
+
+    <span id="news-heading">News</span>
   </body>
 </html>
