@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* .card, img{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+        } */
+
+      .main-container,
+      .row-two {
+        display: flex;
+        flex-direction: row;
+      }
+
+      /* css selector - it is used to target our element more specifically 
+      descendent combinator selector */
+      .card img,
+      .card {
+        height: 200px;
+        width: 200px;
+      }
+
+      h2 {
+        background-color: red;
+      }
+
+      div > span:first-child {
+        border-radius: 50%;
+        background-color: red;
+        padding : 6px;
+        margin: 8px;
+      }
+
+
+      .column-two .row-one div{
+          background-color: gray;
+          display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="card">
+        <img src="../images/1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam ipsum
+          asperiores omnis quidem et commodi ut aspernatur facilis blanditiis
+          veniam explicabo, fugit ea iusto ad sint, possimus non eum.
+        </p>
+      </div>
+      <div class="card">
+        <img src="../images/1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quae
+          laboriosam ex sapiente doloribus accusantium ratione veritatis dolor
+          eos! Corrupti nulla eos repudiandae cum! Alias dignissimos assumenda
+          laborum similique et.
+        </p>
+      </div>
+      <div class="card">
+        <img src="../images/1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quae
+          laboriosam ex sapiente doloribus accusantium ratione veritatis dolor
+          eos! Corrupti nulla eos repudiandae cum! Alias dignissimos assumenda
+          laborum similique et.
+        </p>
+      </div>
+      <div class="card">
+        <img src="../images/1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque quae
+          laboriosam ex sapiente doloribus accusantium ratione veritatis dolor
+          eos! Corrupti nulla eos repudiandae cum! Alias dignissimos assumenda
+          laborum similique et.
+        </p>
+      </div>
+    </div> -->
+
+    <div class="main-container">
+      <div class="column-one">
+        <div class="row one">
+          <img style="width: 600px;" src="../images/3.jpg" alt="" />
+        </div>
+
+        <div class="row-two">
+          <div class="card">
+            <img src="../images/5.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              voluptate possimus ducimus veniam, repudiandae, veritatis
+              recusandae quam ad culpa adipisci, eos a? Id quaerat tempora fuga
+              dolore unde, dolorum eligendi.
+            </p>
+          </div>
+          <div class="card">
+            <img src="../images/5.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              voluptate possimus ducimus veniam, repudiandae, veritatis
+              recusandae quam ad culpa adipisci, eos a? Id quaerat tempora fuga
+              dolore unde, dolorum eligendi.
+            </p>
+          </div>
+          <div class="card">
+            <img src="../images/5.jpg" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+              voluptate possimus ducimus veniam, repudiandae, veritatis
+              recusandae quam ad culpa adipisci, eos a? Id quaerat tempora fuga
+              dolore unde, dolorum eligendi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column-two">
+        <div class="row-one">
+          <h2>Latest Business News</h2>
+
+          <div>
+            <span>1</span>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Incidunt temporibus quaerat quia dicta voluptatem mollitia?
+             </span
+            >
+          </div>
+          <div>
+            <span>2</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt temporibus quaerat quia dicta voluptatem mollitia?</span>
+          </div>
+          <div>
+            <span>3</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt temporibus quaerat quia dicta voluptatem mollitia?</span>
+          </div>
+          <div>
+            <span>4</span>
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Incidunt temporibus quaerat quia dicta voluptatem mollitia?</span>
+          </div>
+        </div>
+
+        <div class="row-two"></div>
+      </div>
+    </div>
+  </body>
+</html>
