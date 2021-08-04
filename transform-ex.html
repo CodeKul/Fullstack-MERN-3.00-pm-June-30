@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 400px;
+            width: 500px;
+            border: solid 2px black ;
+            background-color: chartreuse;
+            
+        }
+
+        /* https://css-tricks.com/almanac/properties/t/transform/ */
+
+        /* Create a Flip Card */
+
+        /* transform-origin and perspective-origin 
+
+        perspective and transform-style */
+
+        .container:hover{
+            transform: translateX(400px);
+            transform: translateY(400px);
+
+            transform: translateY(300px) translateX(500px);
+
+            transform: rotateX(180deg);
+
+            transform: rotateY(180deg);
+
+            transform: rotateX(180deg) rotateY(180deg) ;
+
+            transform: scaleY(3) scaleX(4);
+
+            transform: scale(3);
+
+            transform: translate(300px);
+
+
+            transform: skewX(30deg);
+
+            /* transform: skewY(30deg); */
+        }
+
+        img:hover{
+           
+            perspective: 100px;
+            -ms-perspective: 1000px;
+            -moz-perspective: 1000px;
+            -webkit-perspective: 100px;
+            transform-style: preserve-3d;
+            transform: rotateY(180deg);
+            transform-origin: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <h1>Container</p>
+
+    </div>
+
+
+    <img src="./images/blog-writing.jpg" alt="">
+</body>
+</html>
