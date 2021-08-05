@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+/* parallax-flip-card effect  https://codepen.io/Moslim/pen/zdPrVp */
+
+        .container{
+            perspective: 100px;
+           
+        }
+
+
+        img{
+            height: 300px;
+            width:300px;
+        }
+
+
+        .card{
+            border: black solid 2px;
+            height: 350px;
+
+            width: 300px;
+            /* position: relative; */
+            transform-style: preserve-3d;
+            box-shadow: 5px 10px 25px 5px blue;
+            
+
+           
+        }
+
+        .front-card{
+            position: absolute;
+            backface-visibility: hidden;
+            
+        }
+
+
+        .back-card, .back-card:hover{
+            position: absolute;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+        }
+
+        p{
+            width: 300px
+        }
+
+
+        .card:hover{
+            transform: rotateY(180deg);
+         
+            transition-duration: 6s;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="front-card">
+
+                <img src="./images/img3.jpg" alt="">
+
+            </div>
+
+            <div class="back-card">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at, numquam a quos esse iusto,
+                    beatae aliquam officia quae nulla dolor! Suscipit placeat sit labore officia velit eius facilis
+                    consectetur.</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
