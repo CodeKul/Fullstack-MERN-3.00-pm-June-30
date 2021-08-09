@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes leftToRight {
+
+            from {
+              transform: translateX(0px)
+                
+            }
+
+
+            to{
+               
+              transform: translateX(100px) ;
+                color: red;
+            }
+            
+        }
+
+
+        h1{
+                animation-name: magic;
+                animation-duration:5s;
+                animation-timing-function:ease-out;
+                animation-iteration-count: infinite;
+                /* animation-direction: reverse;
+                animation-direction: alternate-reverse; */
+                animation-delay: 3s;
+                
+            }
+
+
+            p{
+                animation-name: magic;
+                animation-duration:15s;
+                /* animation-timing-function: ease-in-out; */
+                animation-iteration-count: infinite;
+
+            }
+
+
+
+            @keyframes magic {
+
+                0% {transform:translateX(400px)}
+                /* 20% {transform:translateY(200px)}
+                40% {transform:scale(2) rotateY(180deg)} */
+                50% {transform:scale(2)}
+                100% {transform:scale(1) rotateX(180deg)}
+            }
+
+
+            @keyframes pulse{
+                0% {box-shadow: 0px 0px 0px 0px;}
+                50% {box-shadow: 1px 2px 5px 5px; transform: scale(2);}
+                100% {box-shadow: 0px 0px 0px 0px;}
+            }
+
+
+            @keyframes cinematic {
+                0% {transform:skewY(0deg)}
+                50% {transform:skewY(45deg) translateY(400px)}
+                100% {transform:skewY(180deg)}
+
+            }
+
+
+            .pulse{
+                animation-name: pulse;
+                animation-duration:15s;
+                border-radius: 50%;
+                height: 20px;
+                width: 20px;
+            }
+
+
+            img{
+                height: 200px;
+                width: 200px;
+                animation-name: cinematic;
+                animation-duration:15s;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animation  Examples</h1>
+
+        <p>Element</p>
+
+        <p class="pulse"></p>
+
+
+        <img src="./images/img4.jpg" alt="">
+    </div>
+</body>
+</html>

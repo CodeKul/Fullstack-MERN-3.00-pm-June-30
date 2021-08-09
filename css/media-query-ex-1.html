@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<!-- 
+    https://sympli.io/blog/a-quick-guide-to-css-for-printable-webpages/ -->
+
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .column-1 img {
+        height: 100%;
+        width: 100%;
+        border: black solid 2px;
+      }
+
+      img {
+        height: 250px;
+        width: 200px;
+        border: black solid 2px;
+      }
+
+      /* 
+        @media screen/print/all/speech {
+
+        } */
+
+      @media all and (max-width: 600px) {
+        .container {
+          display: block;
+        }
+
+        .column-2,
+        .column-3 {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        section {
+            color: white;
+            background-color: black;
+        }
+
+
+
+        }
+
+
+        @media all and (min-width:992px) and (max-width:1024px){
+
+section {
+color: rgb(128, 218, 27);
+background-color:yellow;
+}
+
+        /* img{
+            height: 100%;
+            width: 100%;
+            border: black solid 2px;
+        } */
+      }
+
+      @media print and (min-width:230px){
+
+        section {
+/* color: red;
+background-color:yellow; */
+display: none
+}
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-1">
+        <img src="../images/image.png" />
+      </div>
+
+      <div class="column-2">
+        <div>
+          <img src="../images/image.png" />
+        </div>
+
+        <div>
+          <img src="../images/image.png" />
+        </div>
+      </div>
+
+      <div class="column-3">
+        <img src="../images/image.png" />
+
+        <img src="../images/image.png" />
+      </div>
+    </div>
+
+    <section>
+      Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta
+      dapibus. Proin eget tortor risus. Vivamus magna justo, lacinia eget
+      consectetur sed, convallis at tellus. Sed porttitor lectus nibh.
+      Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+      convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor
+      eget felis porttitor volutpat. Sed porttitor lectus nibh. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula sed
+      magna dictum porta. Vivamus suscipit tortor eget felis porttitor volutpat.
+      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor
+      lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit
+      nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet
+      elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Donec
+      rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum
+      porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras
+      ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget
+      consectetur sed, convallis at tellus. Donec rutrum congue leo eget
+      malesuada. Donec sollicitudin molestie malesuada. Vivamus magna justo,
+      lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat,
+      accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie
+      malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et
+      ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
+      vel, ullamcorper sit amet ligula. Vivamus magna justo, lacinia eget
+      consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula
+      elementum sed sit amet dui. Vivamus magna justo, lacinia eget consectetur
+      sed, convallis at tellus. Vivamus magna justo, lacinia eget consectetur
+      sed, convallis at tellus. Nulla porttitor accumsan tincidunt. Donec
+      sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis
+      porttitor volutpat. Curabitur non nulla sit amet nisl tempus convallis
+      quis ac lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac
+      lectus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+      Proin eget tortor risus. Curabitur aliquet quam id dui posuere blandit.
+      Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie
+      malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent
+      sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus
+      magna justo, lacinia eget consectetur sed, convallis at tellus. Sed
+      porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed,
+      convallis at tellus. Praesent sapien massa, convallis a pellentesque nec,
+      egestas non nisi. Cras ultricies ligula sed magna dictum porta. Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla sit
+      amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in
+      faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque,
+      auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur
+      aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis
+      porttitor volutpat.
+    </section>
+  </body>
+</html>
