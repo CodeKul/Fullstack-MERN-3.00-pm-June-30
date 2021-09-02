@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+      }
+      .column-2 h2 {
+        color: blue;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid black;
+      }
+
+      .row p:nth-child(2),
+      .col-2 span {
+        color: gray;
+      }
+
+      .content {
+        width: 300px;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+      .grid-container{
+          display: inline-grid;
+
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(6, 1fr) ;
+          gap: 10px;
+      }
+
+      .container{
+          display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-1">
+
+        <div class="grid-container">
+
+            <div class="grid-items">
+                <p>First Name</p>
+                <input type="text">
+            </div>
+            <div class="grid-items">
+                <p>Last Name</p>
+                <input type="text">
+            </div>
+            <div class="grid-items">
+                <p>User Name</p>
+                <input type="text">
+            </div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+            <div class="grid-items"></div>
+
+        </div>
+      </div>
+
+      <div class="column-2">
+        <h2>Your Cart</h2>
+
+        <div class="content">
+          <div class="row">
+            <div class="col-1">
+              <p>Product name</p>
+              <p>Brief Description</p>
+            </div>
+
+            <div class="col-2">
+              <span>$12</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p>Product name</p>
+              <p>Brief Description</p>
+            </div>
+
+            <div class="col-2">
+              <span>$12</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p>Product name</p>
+              <p>Brief Description</p>
+            </div>
+
+            <div class="col-2">
+              <span>$12</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p>Product name</p>
+              <p>Brief Description</p>
+            </div>
+
+            <div class="col-2">
+              <span>$12</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <p>Product name</p>
+              <p>Brief Description</p>
+            </div>
+
+            <div class="col-2">
+              <span>$12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

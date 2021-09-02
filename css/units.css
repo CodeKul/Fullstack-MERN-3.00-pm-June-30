@@ -1,0 +1,13 @@
+.container{
+    font-size: 5rem;
+}
+
+.container p{
+    font-size: 2vw;
+    background-color: chartreuse;
+    
+}
+
+html{
+    font-size: 2px;
+}
