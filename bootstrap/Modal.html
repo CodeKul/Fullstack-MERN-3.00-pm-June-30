@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <button
+      class="btn btn-primary"
+     
+    >
+      Open Modal
+    </button>
+
+    <div class="modal" data-bs-backdrop="static" id="modal">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Modal</h4>
+            <button data-bs-dismiss="modal" class="btn-close"></button>
+          </div>
+
+          <div class="modal-body">
+              Codekul 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt assumenda maiores, et repudiandae, a, laborum nam consequatur odio debitis amet fugiat architecto est enim rerum? Vel voluptates in quae. Ex.
+         
+            </div>
+          <div class="modal-footer">
+              <button class="btn btn-success">
+                  Submit
+              </button>
+              <button data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script>
+        //document.onload() = () => document.write("Hiii") 
+        var myModal = new bootstrap.Modal(document.getElementById('modal'))
+        myModal.toggle()
+
+        myModal.show()
+
+        
+    </script>
+  </body>
+</html>
