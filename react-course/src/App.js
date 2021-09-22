@@ -6,6 +6,7 @@ import CounterFn from './components/CounterFn';
 
 // https://blog.logrocket.com/react-lifecycle-methods-tutorial-examples/ 
 // https://www.javatpoint.com/react-state-vs-props
+// https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
 
 function App() {
   return (
