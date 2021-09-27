@@ -11,9 +11,9 @@ import CounterFn from './components/CounterFn';
 function App() {
   return (
     <div className="App">
-     {/* <Counter/> */}
+     <Counter/>
 
-     <CounterFn/>
+     {/* <CounterFn/> */}
     </div>
   );
 }
