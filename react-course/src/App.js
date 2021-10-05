@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Counter from './components/Counter';
-import CounterFn from './components/CounterFn';
-import NewModule from './components/NewModule';
-import RegistrationForm from './components/RegistrationForm';
-import Forms from './components/Forms';
+import logo from "./logo.svg";
+import "./App.css";
+import Counter from "./components/Counter";
+import CounterFn from "./components/CounterFn";
+import NewModule from "./components/NewModule";
+import RegistrationForm from "./components/RegistrationForm";
+import Forms from "./components/Forms";
+import Data from "./components/Data";
 
-
-// https://blog.logrocket.com/react-lifecycle-methods-tutorial-examples/ 
+// https://blog.logrocket.com/react-lifecycle-methods-tutorial-examples/
 // https://www.javatpoint.com/react-state-vs-props
 // https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3
 
@@ -16,13 +16,14 @@ import Forms from './components/Forms';
 function App() {
   return (
     <div className="App">
-     <Counter/>
+      <Counter />
+      {/* <Data/> */}
 
-     <Forms/>
-<RegistrationForm/>
-     <NewModule/>
+      <Forms />
+      <RegistrationForm />
+      <NewModule />
 
-     {/* <CounterFn/> */}
+      {/* <CounterFn/> */}
     </div>
   );
 }

@@ -1,6 +1,16 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 export default function RegistrationForm() {
+
+    const inputRef = useRef()
+
+    const handleClick =() => {
+        inputRef.current.style.border="1px solid red"
+        inputRef.current.style.color="green"
+        inputRef.current.href="#top"
+    }
+
+   
     const [user, setUser] = useState(
         {
             firstName: "",
@@ -23,6 +33,11 @@ export default function RegistrationForm() {
     console.log(user)
     return (
         <div>
+
+
+<p id="top">Top Section</p>
+
+            <input onClick={handleClick} ref={inputRef} type="text" />
             <input onChange={handleChange} name="firstName" value={user.firstName} placeholder="firstname" type="text" />
             <input onChange={handleChange} name="lastName" value={user.lastName} placeholder="lastname" type="text" />
 
@@ -47,6 +62,8 @@ export default function RegistrationForm() {
             <p>{user.firstName}</p>
             <p>{user.lastName}</p>
             <p>{user.city}</p>
+
+            <button onClick={handleClick} ref={inputRef}>Go to Top</button>
 
         </div>
     )
