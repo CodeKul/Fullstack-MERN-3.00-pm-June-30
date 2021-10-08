@@ -6,6 +6,9 @@ import NewModule from "./components/NewModule";
 import RegistrationForm from "./components/RegistrationForm";
 import Forms from "./components/Forms";
 import Data from "./components/Data";
+import ContextEx from "./components/ContextEx";
+import ContextEx3 from "./components/ContextEx3";
+import ContextEx32 from "./components/ContextEx32";
 
 // https://blog.logrocket.com/react-lifecycle-methods-tutorial-examples/
 // https://www.javatpoint.com/react-state-vs-props
@@ -18,6 +21,9 @@ function App() {
     <div className="App">
       <Counter />
       {/* <Data/> */}
+
+      <ContextEx3/>
+      <ContextEx32/>
 
       <Forms />
       <RegistrationForm />
