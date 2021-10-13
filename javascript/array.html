@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <!-- https://medium.com/clarusway/making-a-todo-list-with-html-css-and-javascript-154839b770b6 -->
 
-
     <!-- https://blog.logrocket.com/react-lifecycle-methods-tutorial-examples/ -->
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- array.map 
     array.filter 
     array.slice 
     array.push 
     array.pop  -->
-</body>
+
+    <script>
+      let numbers = [10, 20, 30, 45, 55];
+
+      // console.log(numbers.find(element => {
+      //     return(element >10)
+      // }))
+
+      // array.join 
+      // array.conacat
+      // array.sort 
+      // array.forEach 
+      // array.reduce
+      // array.include
+
+      let a = 20;
+      let b = "20";
+
+      console.log(a === b);
+
+      numbers.push(100);
+      console.log(numbers);
+
+    //   console.log(numbers.pop());
+
+      console.log(
+        numbers.filter((element) => {
+          return element > 35;
+        })
+      );
+
+
+      numbers.splice(3,4, "One", "Two")
+      numbers.slice(2)
+      console.log(numbers.slice(2))
+      console.log(numbers)
+    </script>
+  </body>
 </html>
