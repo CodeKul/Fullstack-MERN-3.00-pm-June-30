@@ -20,14 +20,16 @@
     <script>
       let numbers = [10, 20, 30, 45, 55];
 
+      let data = ["animal", "zoo", "react", "html", "css"];
+
       // console.log(numbers.find(element => {
       //     return(element >10)
       // }))
 
-      // array.join 
+      // array.join
       // array.conacat
-      // array.sort 
-      // array.forEach 
+      // array.sort
+      // array.forEach
       // array.reduce
       // array.include
 
@@ -39,7 +41,7 @@
       numbers.push(100);
       console.log(numbers);
 
-    //   console.log(numbers.pop());
+      //   console.log(numbers.pop());
 
       console.log(
         numbers.filter((element) => {
@@ -47,11 +49,49 @@
         })
       );
 
+      // https://www.youtube.com/watch?v=VmQ6dHvnKIM
+      // https://www.youtube.com/watch?v=JRNToFh3hxU
 
-      numbers.splice(3,4, "One", "Two")
-      numbers.slice(2)
-      console.log(numbers.slice(2))
-      console.log(numbers)
+      // numbers.splice(3, 4, "One", "Two");
+      numbers.slice(2);
+      console.log(numbers.slice(2));
+      console.log(numbers);
+      console.log(numbers.join("-"));
+
+      console.log(numbers.concat(data));
+
+      console.log(numbers);
+
+      numbers.map((i) => {
+        console.log(i + 2);
+      });
+
+      let cards = [
+        {
+          image:
+            "https://images.unsplash.com/photo-1634149944809-106fe7210c51?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+          content: "One",
+        },
+        {
+          image:
+            "https://images.unsplash.com/photo-1634093998613-1f2077eac2c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
+          content: "Two",
+        },
+        {
+          image:
+            "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80",
+          content: "Three",
+        },
+      ];
+
+      cards.map((card) => {
+        <div class="card" style="width: 18rem">
+          <img src={card.image} class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <p class="card-text">{card.content}</p>
+          </div>
+        </div>;
+      });
     </script>
   </body>
 </html>
