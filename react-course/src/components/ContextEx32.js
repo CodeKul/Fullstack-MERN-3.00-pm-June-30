@@ -7,7 +7,7 @@ export default function ContextEx32() {
 
   return (
     <div>
-      <userContext.Consumer>Hello</userContext.Consumer>
+     
     </div>
   );
 }
