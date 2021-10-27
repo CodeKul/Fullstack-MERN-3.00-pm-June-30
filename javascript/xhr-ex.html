@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      table {
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Body</th>
+        <th>Email</th>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+
+      <div id="result"></div>
+    </table>
+    <script>
+
+
+let xyz = fetch("https://jsonplaceholder.typicode.com/comment", "POST")
+.then(()=> {
+  
+})
+.catch(
+  console.error("Error....")
+)
+
+
+
+console.log(xyz)
+      let xhr = new XMLHttpRequest();
+      console.log(xhr);
+      xhr.open("GET", "https://jsonplaceholder.typicode.com/comments");
+      xhr.send();
+
+      xhr.onload = function () {
+        if (xhr.status != 200) {
+          // analyze HTTP status of the response
+          alert(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+        } else {
+          // show the result
+          // alert(`Done, got ${xhr.response.length} bytes, ${xhr.responseText}`); // response is the server response
+          console.log(xhr.responseText);
+
+          let result = JSON.parse(xhr.responseText);
+          //console.log(JSON.stringify(result))
+          console.log(result);
+
+          var resultTable = `
+            <table>
+
+                <tr>
+                    <th> Post Id </th>
+                    <th> ID </th>
+                    <th> Name </th>
+                    <th> Email </th>
+                    <th> Comment</th>
+                    </tr>
+
+               
+            `;
+
+            
+          result.map((item) => {
+            resultTable += `
+  <tr>
+    <td>${item.body}</td>
+    <td>${item.email}</td>
+    <td>${item.id}</td>
+    <td>${item.name}</td>
+
+
+    </tr>`;
+          });
+
+          console.log(xhr.status);
+
+          document.getElementById("result").innerHTML = resultTable;
+
+          //document.write(resultTable);
+        }
+      };
+
+      //   let xhr2 = fetch("https://jsonplaceholder.typicode.com/comments").then(
+      //     (response = (response) => {
+      //       console.log(response);
+      //       console.log(response.json());
+      //     })
+      //   );
+    </script>
+  </body>
+</html>

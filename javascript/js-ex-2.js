@@ -11,6 +11,10 @@
 // which will have input elements for name, marks globalThis, outof marks 
 // when click on button should display Name, total marks, percentage, grade, cgpa
 
+
+let blocks = new Array(100);
+console.log(blocks)
+
 console.log(addition());
 
 message = "hii"
