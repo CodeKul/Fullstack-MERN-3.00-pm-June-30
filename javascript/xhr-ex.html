@@ -26,6 +26,11 @@
     <script>
 
 
+// https://dmitripavlutin.com/javascript-fetch-async-await/
+
+console.log(Promise.all([fetch("https://jsonplaceholder.typicode.com/posts"),fetch("https://jsonplaceholder.typicode.com/photos")]) )
+
+
 let xyz = fetch("https://jsonplaceholder.typicode.com/comment", "POST")
 .then(()=> {
   
