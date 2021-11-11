@@ -1,16 +1,37 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-export default function Navbar() {
-    return (
-        <div>
-            <ul>
-                <li><Link to="/home">Home</Link></li>
-                <li><Link to="/home">About</Link></li>
-                <li><Link to="/home">Service</Link></li>
-                <li><Link to="/home">Contact</Link></li>
-                <li><Link to="/home">Blog</Link></li>
-            </ul>
-        </div>
-    )
+import React from "react";
+import "./Navbar.css";
+import { Link, NavLink, useRouteMatch } from "react-router-dom";
+function Navbar() {
+  const { url } = useRouteMatch();
+  console.log(url);
+  return (
+    <nav>
+      <ul>
+        <li>
+          {/* <Link to="/">Home</Link> */}
+          <NavLink to="/" exact>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          {/* <Link to="/about">About</Link> */}
+          <NavLink to={`/about`}>About</NavLink>
+        </li>
+        <li>
+          {/* <Link to="/contact">Contact</Link> */}
+          <NavLink to="/contact">Contact</NavLink>
+        </li>
+        <li>
+          {/* <Link to="/contact">Contact</Link> */}
+          <NavLink to="/articles">Blog</NavLink>
+        </li>
+        <li>
+          {/* <Link to="/contact">Contact</Link> */}
+          <NavLink to="/game">Play a game</NavLink>
+        </li>
+      </ul>
+    </nav>
+  );
 }
+
+export default Navbar;
