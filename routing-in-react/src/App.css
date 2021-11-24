@@ -13,6 +13,24 @@
   }
 }
 
+.block-1, .block-2{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+}
+
+.block-1{
+  background-color: red;
+  z-index: 1;
+}
+
+.block-2{
+  left: 20px;
+  top: 20px;
+  background-color: blue;
+  z-index: 5;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
